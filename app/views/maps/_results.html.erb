@@ -1,0 +1,9 @@
+<%=debug @locations%>
+<ul>	
+<%@locations.each do |l| %>
+	<li><%=link_to_function l.address, "map.setCenter(new GLatLng(#{l.latitude}, #{l.longitude}), 8);Element.removeClassName('body', 'sidebar-on');"%></li>
+	<% if @locations.first == l %>
+		<p>Do you mean:</p>
+	<% end %>
+<% end %>
+</ul>

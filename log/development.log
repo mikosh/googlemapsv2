@@ -1,0 +1,35 @@
+
+
+Processing MapsController#index (for 127.0.0.1 at 2009-03-24 00:56:24) [GET]
+  Session ID: 16efdf760d15fe982883481a10d202ac
+  Parameters: {"action"=>"index", "controller"=>"maps"}
+  [4;36;1mSQL (0.022552)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.000188)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+Caught an error during HostIp geocoding call: getaddrinfo: Temporary failure in name resolution
+Rendering template within layouts/start
+Rendering maps/index
+Completed in 0.22303 (4 reqs/sec) | Rendering: 0.02304 (10%) | DB: 0.02274 (10%) | 200 OK [http://localhost/]
+
+
+Processing MapsController#search (for 127.0.0.1 at 2009-03-24 00:56:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmJmNzI5OTFmNmQxNjRhN2VlZGFjNGViZmM0ZGU3
+YTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlbzoTR2Vva2l0OjpHZW9Mb2MQOg9AcHJlY2lzaW9uIgx1
+bmtub3duOhJAY291bnRyeV9jb2RlMDoUQHN0cmVldF9hZGRyZXNzMDoJQGxu
+ZzA6CUB6aXAwOglAYWxsWwZACToJQGxhdDA6EkBmdWxsX2FkZHJlc3MwOgtA
+c3RhdGUwOg1Ac3VjY2Vzc0Y6CkBjaXR5MAY6CkB1c2VkewY7B0Y=--e5a12c5ccfd6be86f69ec31899992c6dd4ef591c
+  Parameters: {"commit"=>"Search", "search"=>"hamburg", "authenticity_token"=>"e1999943330ad871212c47ea42d4d6fb263228b6", "action"=>"search", "controller"=>"maps"}
+Rendered maps/_results (0.00134)
+Completed in 30.21993 (0 reqs/sec) | Rendering: 0.00904 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/maps/search?authenticity_token=e1999943330ad871212c47ea42d4d6fb263228b6&search=hamburg&commit=Search]
+
+
+Processing MapsController#search (for 127.0.0.1 at 2009-03-24 01:07:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlMmJmNzI5OTFmNmQxNjRhN2VlZGFjNGViZmM0ZGU3
+YTIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7BjoLbm90aWNlbzoTR2Vva2l0OjpHZW9Mb2MQOhJAY291bnRyeV9jb2Rl
+MDoPQHByZWNpc2lvbiIMdW5rbm93bjoUQHN0cmVldF9hZGRyZXNzMDoJQGxu
+ZzA6CUB6aXAwOglAYWxsWwZACToSQGZ1bGxfYWRkcmVzczA6CUBsYXQwOgtA
+c3RhdGUwOg1Ac3VjY2Vzc0Y6CkBjaXR5MAY6CkB1c2VkewY7B1Q=--40a6aa56f74d66b21153e75586c54652bf9329ac
+  Parameters: {"commit"=>"Search", "search"=>"klaus-groth-str.", "authenticity_token"=>"e1999943330ad871212c47ea42d4d6fb263228b6", "action"=>"search", "controller"=>"maps"}
+Rendered maps/_results (0.01085)
+Completed in 0.80633 (1 reqs/sec) | Rendering: 0.01728 (2%) | DB: 0.00000 (0%) | 200 OK [http://localhost/maps/search?authenticity_token=e1999943330ad871212c47ea42d4d6fb263228b6&search=klaus-groth-str.&commit=Search]

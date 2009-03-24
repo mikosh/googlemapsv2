@@ -1,0 +1,23 @@
+<div id="toolbar">
+	<div>
+		<%form_remote_tag :url => {:action => 'search'},:method => :get, 
+		:complete => "Element.addClassName('body', 'sidebar-on')",
+		:loading => "$('spinner').style.display='block'",
+        :loaded => "$('spinner').style.display='none'" do %>
+			<%= text_field_tag :search%>
+			<%= submit_tag "Search" %>
+		<% end %>
+	</div>
+	<%= image_tag("/images/indicator_small.gif", :id=>"spinner", :style=>"display: none;") %>
+	<ul id="sidebar-controls">
+		<li> </li>
+		<li><%=link_to_function "Show", "Element.addClassName('body', 'sidebar-on')", {:id => "button-sidebar-show"}%></li>
+		<li><%=link_to_function "Hide", "Element.removeClassName('body', 'sidebar-on')", {:id => "button-sidebar-hide"}%></li>
+	</ul>
+</div>
+<div id="map-wrapper">
+<%= @map.div %>
+</div>
+<div id="sidebar">
+
+</div>
